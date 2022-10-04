@@ -7,6 +7,11 @@ export const ClientOpts: ClientOptions = {
   collectionLimits: {
     messages: 1
   },
+  allowedMentions: {
+    everyone: false,
+    roles: false,
+    users: true
+  },
   gateway: {
     maxShards: "auto",
     intents: ["MESSAGE_CONTENT", "GUILDS", "GUILD_MEMBERS", "GUILD_EMOJIS_AND_STICKERS", "GUILD_VOICE_STATES", "GUILD_MESSAGES"]
@@ -17,6 +22,6 @@ export const Config = {
   prefix: ["yp", "y2"],
   slash: {
     global: false,
-    guildID: "617041217951236291"
+    guildID: "ID"
   }
 };

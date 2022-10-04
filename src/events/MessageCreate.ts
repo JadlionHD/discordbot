@@ -11,6 +11,6 @@ export default class extends Event<"messageCreate"> {
   public async run(bot: IClient, msg: Message<Uncached | AnyTextChannel>): Promise<void> {
     if (msg.channel?.type !== 0) return;
     if (!msg.member?.permissions.has("SEND_MESSAGES")) return;
-    bot.log.debug(`Message: `, msg.id);
+    bot.log.debug(`Message: `, msg.content);
   }
 }
