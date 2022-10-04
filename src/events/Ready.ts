@@ -2,7 +2,7 @@ import { Event } from "../abstracts/Event";
 import { IClient } from "../structures/IClient";
 import { Constants } from "oceanic.js";
 
-export default class extends Event {
+export default class extends Event<"ready"> {
   constructor() {
     super();
     this.name = "ready";

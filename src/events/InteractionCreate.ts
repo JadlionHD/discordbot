@@ -2,7 +2,7 @@ import { Event } from "../abstracts/Event";
 import { IClient } from "../structures/IClient";
 import { Constants, AnyInteractionGateway, CommandInteraction } from "oceanic.js";
 
-export default class extends Event {
+export default class extends Event<"interactionCreate"> {
   constructor() {
     super();
     this.name = "interactionCreate";
