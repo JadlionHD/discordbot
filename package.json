@@ -1,0 +1,26 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "npm run build && node dist/app.js",
+    "dev": "tsc --watch",
+    "build": "rm -rf dist/ && tsc"
+  },
+  "keywords": [],
+  "author": "JadlionHD <jadlion.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "4.1.1",
+    "dotenv": "^16.0.3",
+    "eventemitter3": "^4.0.7",
+    "moment": "^2.29.4",
+    "oceanic.js": "^1.1.1",
+    "shoukaku": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.0"
+  }
+}
